@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "AR JULIAN";
+  src: url("../fonts/ar-julian.ttf");
+}
+
+.start-bg {
+	-fx-background-image: url("../img/start-bg.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position: center;
+	-fx-background-size: stretch;
+}
+.board-bg, .lobby-bg {
+	-fx-background-image: url("../img/board-bg.jpg");
+	-fx-background-repeat: stretch;
+	-fx-background-position: center;
+	-fx-background-size: stretch;
+}
+.scroll-pane > .viewport {
+	-fx-background-color: transparent;
+}
+.bg-transparent {
+	-fx-background-color: transparent;
+}
+
+.players.list-view, .players .list-cell, .combo-box .list-view, .chat-bg .list-cell {
+	-fx-background-color:transparent;
+}
+
+.custom-cell {
+	-fx-padding: 10px 20px;
+}
+
+.button, .custom-cell, .combo-box, .combo-box .list-view .list-cell, .carcassonne-bg {
+	-fx-border-width: 2px;
+	-fx-border-color: rgb(171,98,53);
+	-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 55% , rgb(200,45,25), rgb(116,30,17));
+	-fx-text-fill: white;
+}
+
+.chat-bg {
+	-fx-border-width: 2px;
+	-fx-border-color: rgb(171,98,53);
+	-fx-background-color: radial-gradient(radius 100%, rgb(116,30,17), derive(rgb(200,45,25), -25%), rgb(116,30,17));
+}
+
+.button, .font-white, .chat-bg, .chat-bg .list-cell {
+	-fx-text-fill: white;
+}
+
+.button, .text-field, .label, .carcassonne-font {
+	-fx-font-family: 'AR JULIAN';
+	-fx-font-size: 20px;
+}
+
+.button:hover, .combo-box:hover, .combo-box .list-view .list-cell:hover {
+	-fx-background-color: radial-gradient(focus-distance 0% , center 50% 50% , radius 55% , rgb(116,30,17), rgb(200,45,25));
+}
+
+.chat-font {
+	-fx-font-size: 16px;
+}
+
+.glyph-font {
+	-fx-text-fill: white;
+	-fx-font-family: 'FontAwesome';
+}
+
+.slider {
+	-fx-tick-label-font-family: 'AR JULIAN';
+	-fx-tick-label-font-size: 20px;
+	-fx-tick-label-fill: white;
+}
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TilePane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="902.0" styleClass="start-bg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="522.0" spacing="30.0">
+               <children>
+                  <Label fx:id="errorLabel" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" alignment="CENTER" maxWidth="300.0" prefHeight="40.0" prefWidth="300.0" promptText="Username auswählen">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="usernameButton" mnemonicParsing="false" onAction="#updateUsername" prefHeight="43.0" prefWidth="278.0" text="Username auswählen">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <TilePane.margin>
+                  <Insets top="220.0" />
+               </TilePane.margin>
+            </VBox>
+         </children>
+      </TilePane>
+      <Button mnemonicParsing="false" onAction="#exitGame" text="Zurück" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</AnchorPane>

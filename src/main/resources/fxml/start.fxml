@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="start-bg" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TilePane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="902.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="260.0" spacing="20.0">
+               <children>
+                  <Button fx:id="createButton1" mnemonicParsing="false" onAction="#createGame" prefHeight="30.0" prefWidth="240.0" text="Neues Spiel">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="joinButton" mnemonicParsing="false" onAction="#joinGame" prefHeight="30.0" prefWidth="240.0" text="Spiel beitreten">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+	              <Button mnemonicParsing="false" onAction="#openRulesScreen" prefHeight="30.0" prefWidth="240.0" text="Regeln">
+	                 <font>
+	                    <Font name="Arial" size="24.0" />
+	                 </font>
+	              </Button>
+                  <Button mnemonicParsing="false" onAction="#playTutorial" prefHeight="30.0" prefWidth="240.0" text="Tutorial">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <TilePane.margin>
+                  <Insets top="220.0" />
+               </TilePane.margin>
+            </VBox>
+         </children>
+      </TilePane>
+      <Button fx:id="settingsBt" mnemonicParsing="false" onAction="#openSettings" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</AnchorPane>
